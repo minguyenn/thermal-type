@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BYE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black:wght@900&display=swap">
+<style>html,body{margin:0;height:100%;background:#ffffff}body{display:grid;place-items:center}.thermal-type{width:min(100vw,100vh*1.0000);}</style>
+</head>
+<body>
+<div class="thermal-type">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" style="display:block;height:auto" role="img" aria-label="BYE">
+<defs>
+<linearGradient id="stripe" gradientUnits="userSpaceOnUse" x1="207.99" y1="670.10" x2="1072.48" y2="193.82" spreadMethod="repeat">
+<stop offset="0.0000" stop-color="#ffffff"/><stop offset="0.0625" stop-color="#f4f4f4"/><stop offset="0.1250" stop-color="#d7d7d7"/><stop offset="0.1875" stop-color="#aeaeae"/><stop offset="0.2500" stop-color="#808080"/><stop offset="0.3125" stop-color="#515151"/><stop offset="0.3750" stop-color="#282828"/><stop offset="0.4375" stop-color="#0b0b0b"/><stop offset="0.5000" stop-color="#000000"/><stop offset="0.5000" stop-color="#000000"/><stop offset="0.5625" stop-color="#0b0b0b"/><stop offset="0.6250" stop-color="#282828"/><stop offset="0.6875" stop-color="#515151"/><stop offset="0.7500" stop-color="#808080"/><stop offset="0.8125" stop-color="#aeaeae"/><stop offset="0.8750" stop-color="#d7d7d7"/><stop offset="0.9375" stop-color="#f4f4f4"/><stop offset="1.0000" stop-color="#ffffff"/>
+<animateTransform attributeName="gradientTransform" type="translate" values="0 0;864.49 -476.28" keyTimes="0;1" dur="3.500s" repeatCount="indefinite"/>
+</linearGradient>
+<filter id="material" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+<feGaussianBlur in="SourceAlpha" stdDeviation="60"/>
+<feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feBlend in="SourceGraphic" mode="overlay" result="mat"/>
+<feBlend in="SourceGraphic" in2="mat" mode="lighten"/>
+</filter>
+<filter id="color" filterUnits="userSpaceOnUse" x="0" y="0" width="1000" height="1000" color-interpolation-filters="sRGB">
+<feGaussianBlur in="SourceGraphic" stdDeviation="16" edgeMode="duplicate" result="sharp"/>
+<feGaussianBlur in="SourceGraphic" stdDeviation="70" edgeMode="duplicate" result="haloB"/>
+<feComponentTransfer in="haloB" result="halo"><feFuncR type="linear" slope="0" intercept="1.000"/><feFuncG type="linear" slope="0" intercept="1.000"/><feFuncB type="linear" slope="0" intercept="1.000"/></feComponentTransfer>
+<feBlend in="sharp" in2="halo" mode="darken" result="soft"/>
+<feTurbulence type="fractalNoise" baseFrequency="1.95" numOctaves="1" seed="7" result="noise"><animate attributeName="seed" values="1;2;3;4;5;6;7;8" dur="0.48s" calcMode="discrete" repeatCount="indefinite"/></feTurbulence>
+<feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+<feComposite in="soft" in2="mono" operator="arithmetic" k1="-0.28" k2="1.140" k3="0.28" k4="-0.140"/>
+<feComponentTransfer>
+<feFuncR type="table" tableValues="0.016 0.133 0.576 0.965 0.204 0.706 0.910 1.000"/>
+<feFuncG type="table" tableValues="0.024 0.188 0.671 0.976 0.263 0.765 0.929 1.000"/>
+<feFuncB type="table" tableValues="0.047 0.290 0.812 1.000 0.361 0.859 0.965 1.000"/>
+<feFuncA type="table" tableValues="1 1"/>
+</feComponentTransfer>
+</filter>
+</defs>
+<g filter="url(#color)">
+<rect width="1000" height="1000" fill="#fff"/>
+<text text-anchor="middle" dominant-baseline="central" font-family="'Archivo Black', sans-serif" font-weight="900" font-size="313" letter-spacing="-43" fill="url(#stripe)" filter="url(#material)"><tspan x="500" y="500.0">BYE</tspan></text>
+</g>
+
+</svg>
+</div>
+</body>
+</html>
